@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include pension *.css
+recursive-include pension *.csv
+recursive-include pension *.html
+recursive-include pension *.ico
+recursive-include pension *.js
+recursive-include pension *.json
+recursive-include pension *.md
+recursive-include pension *.png
+recursive-include pension *.py
+recursive-include pension *.svg
+recursive-include pension *.txt
+recursive-exclude pension *.pyc
