@@ -1,0 +1,84 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"MYRTXwa-Y7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0645\u0639\u0627\u0634\u0627\u062a</span>\",\"col\":12}},{\"id\":\"H_UzNqsskj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Request for payment of death benefits\",\"col\":3}},{\"id\":\"_ooil6oOWj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Member Request Pension\",\"col\":3}},{\"id\":\"uGU0YqPexH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Member heirs request a pension\",\"col\":3}},{\"id\":\"5zmsZF2QSZ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>\u062a\u0642\u0627\u0631\u064a\u0631</b></span>\",\"col\":12}},{\"id\":\"C3d5UG0W_H\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0645\u0639\u0627\u0634\u0627\u062a\",\"col\":4}},{\"id\":\"xci8eSAJKy\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0645\u0639\u0627\u0634\u0627\u062a\",\"col\":4}}]",
+ "creation": "2023-08-28 10:47:43.328964",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Pension",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0645\u0639\u0627\u0634\u0627\u062a",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0642\u0631\u064a\u0631 : \u0637\u0644\u0628 \u0635\u0631\u0641 \u0627\u0639\u0627\u0646\u0629 \u0648\u0641\u0627\u0629",
+   "link_count": 0,
+   "link_to": "\u062a\u0642\u0631\u064a\u0631 : \u0637\u0644\u0628 \u0635\u0631\u0641 \u0627\u0639\u0627\u0646\u0629 \u0648\u0641\u0627\u0629",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0623\u0633\u062a\u0639\u0644\u0627\u0645 \u0639\u0646 \u062d\u0627\u0644\u0629 \u0637\u0644\u0628 \u0635\u0631\u0641 \u0627\u0639\u0627\u0646\u0629 \u0648\u0641\u0627\u0629",
+   "link_count": 0,
+   "link_to": "\u0627\u0644\u0623\u0633\u062a\u0639\u0644\u0627\u0645 \u0639\u0646 \u062d\u0627\u0644\u0629 \u0637\u0644\u0628 \u0635\u0631\u0641 \u0627\u0639\u0627\u0646\u0629 \u0648\u0641\u0627\u0629",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-12-23 11:49:53.536433",
+ "modified_by": "Administrator",
+ "module": "Pension",
+ "name": "Pension",
+ "number_cards": [],
+ "owner": "test@datasofteg.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "Syndicate",
+ "roles": [
+  {
+   "role": "Pension"
+  }
+ ],
+ "sequence_id": 4.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Member Request Pension",
+   "link_to": "Member Request Pension",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Request for payment of death benefits",
+   "link_to": "Request for payment of death benefits",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Member heirs request a pension",
+   "link_to": "Member heirs request a pension",
+   "type": "DocType"
+  }
+ ],
+ "title": "Pension"
+}

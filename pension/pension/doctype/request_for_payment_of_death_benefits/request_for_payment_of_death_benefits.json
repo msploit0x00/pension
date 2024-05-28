@@ -1,0 +1,393 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "REQ-.####",
+ "creation": "2023-12-18 18:29:41.684713",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "request_tab",
+  "membership_id",
+  "name1",
+  "payment_number",
+  "date_of_birth",
+  "personal_identification_number",
+  "subsidiary_union",
+  "employer",
+  "date_of_death",
+  "request_status",
+  "column_break_7",
+  "name_of_applicant",
+  "subvention_status",
+  "address_of_applicant",
+  "applicant_phone_number",
+  "amount_of_death_benefit",
+  "payment_method",
+  "name_of_person_paid_for_funeral",
+  "search_results_for_member_tab",
+  "member_registration_status_and_subscriptions_section",
+  "constraint",
+  "eligibility_for_registration",
+  "the_effect_precedes_the_disbursement_of_the_death_benefit",
+  "subscriptions_section",
+  "the_date_the_form_was_received_from_the_contributions",
+  "statement_of_the_duration_of_paid_contributions",
+  "the_value_of_the_registration_number_paid",
+  "the_effect_precedes_the_disbursement_of_the_death_benefit2",
+  "accounts_tab",
+  "exclude",
+  "the_members_indebtedness_from_qard_al_hasan",
+  "unpaid_subscriptions",
+  "unpaid_registration_fee",
+  "what_was_previously_spent_by_the_subsidiary_union",
+  "guild_hallmarks",
+  "government_trade_union_stamps",
+  "miscellaneous",
+  "grand_total",
+  "it_is_spent_on_behalf_of",
+  "cheque_number",
+  "date",
+  "column_break_vuw8s",
+  "column_break_apizv",
+  "death_benefit",
+  "the_members_indebtedness_from_qard_al_hasan2",
+  "unpaid_subscriptions2",
+  "unpaid_registration_fee2",
+  "what_was_previously_spent_by_the_subsidiary_union2",
+  "guild_hallmarks2",
+  "government_trade_union_stamps2",
+  "miscellaneous2",
+  "grand_total2",
+  "it_is_spent_on_behalf_of2",
+  "cheque_number2",
+  "date2",
+  "subscriptions_tab",
+  "customer_subscriptions"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_tab",
+   "fieldtype": "Tab Break",
+   "label": "Request"
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Link",
+   "label": "Membership ID",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "membership_id.customer_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "payment_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0631\u0642\u0645 \u0635\u0631\u0641 \u0627\u0644\u0625\u0639\u0627\u0646\u0629"
+  },
+  {
+   "fetch_from": "membership_id.date_of_birth",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fetch_from": "membership_id.personal_identification_number",
+   "fieldname": "personal_identification_number",
+   "fieldtype": "Data",
+   "label": "Personal identification number"
+  },
+  {
+   "fetch_from": "membership_id.custom_sub_syndicate",
+   "fieldname": "subsidiary_union",
+   "fieldtype": "Data",
+   "label": "Subsidiary Union"
+  },
+  {
+   "fetch_from": "membership_id.custom_employer",
+   "fieldname": "employer",
+   "fieldtype": "Data",
+   "label": "Employer"
+  },
+  {
+   "fieldname": "date_of_death",
+   "fieldtype": "Date",
+   "label": "Date of Death"
+  },
+  {
+   "fieldname": "request_status",
+   "fieldtype": "Select",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0637\u0644\u0628",
+   "options": "\n\u0645\u0631\u0641\u0648\u0636"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_applicant",
+   "fieldtype": "Data",
+   "label": "Name of Applicant"
+  },
+  {
+   "fieldname": "subvention_status",
+   "fieldtype": "Select",
+   "label": "Subvention Status",
+   "options": "\nBrother\nSister\nFather\nMother\nDaughter\nSon"
+  },
+  {
+   "fieldname": "address_of_applicant",
+   "fieldtype": "Data",
+   "label": "Address of Applicant"
+  },
+  {
+   "fieldname": "applicant_phone_number",
+   "fieldtype": "Data",
+   "label": "Applicant phone number"
+  },
+  {
+   "fieldname": "amount_of_death_benefit",
+   "fieldtype": "Float",
+   "label": "Amount of Death Benefit"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "Payment Method",
+   "options": "\nCash\nInstallment"
+  },
+  {
+   "fieldname": "name_of_person_paid_for_funeral",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Name of person Paid for Funeral"
+  },
+  {
+   "fieldname": "search_results_for_member_tab",
+   "fieldtype": "Tab Break",
+   "label": "Search Results For Member"
+  },
+  {
+   "fieldname": "member_registration_status_and_subscriptions_section",
+   "fieldtype": "Section Break",
+   "label": "Member registration status and subscriptions"
+  },
+  {
+   "fieldname": "constraint",
+   "fieldtype": "Data",
+   "label": "Constraint"
+  },
+  {
+   "fieldname": "eligibility_for_registration",
+   "fieldtype": "Data",
+   "label": "Eligibility for registration"
+  },
+  {
+   "fieldname": "the_effect_precedes_the_disbursement_of_the_death_benefit",
+   "fieldtype": "Data",
+   "label": "The effect precedes the disbursement of the death benefit"
+  },
+  {
+   "fieldname": "subscriptions_section",
+   "fieldtype": "Section Break",
+   "label": "Subscriptions"
+  },
+  {
+   "fieldname": "the_date_the_form_was_received_from_the_contributions",
+   "fieldtype": "Date",
+   "label": "The date the form was received from the contributions"
+  },
+  {
+   "fieldname": "statement_of_the_duration_of_paid_contributions",
+   "fieldtype": "Data",
+   "label": "Statement of the duration of paid contributions"
+  },
+  {
+   "fieldname": "the_value_of_the_registration_number_paid",
+   "fieldtype": "Data",
+   "label": "The value of the registration number paid"
+  },
+  {
+   "fieldname": "the_effect_precedes_the_disbursement_of_the_death_benefit2",
+   "fieldtype": "Data",
+   "label": "The effect precedes the disbursement of the death benefit"
+  },
+  {
+   "fieldname": "accounts_tab",
+   "fieldtype": "Tab Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "exclude",
+   "fieldtype": "Data",
+   "label": "Exclude"
+  },
+  {
+   "fieldname": "the_members_indebtedness_from_qard_al_hasan",
+   "fieldtype": "Currency",
+   "label": "The members indebtedness from Qard Al Hasan"
+  },
+  {
+   "fieldname": "unpaid_subscriptions",
+   "fieldtype": "Currency",
+   "label": "Unpaid subscriptions"
+  },
+  {
+   "fieldname": "unpaid_registration_fee",
+   "fieldtype": "Currency",
+   "label": "Unpaid registration fee"
+  },
+  {
+   "fieldname": "what_was_previously_spent_by_the_subsidiary_union",
+   "fieldtype": "Currency",
+   "label": "What was previously spent by the subsidiary union "
+  },
+  {
+   "fieldname": "guild_hallmarks",
+   "fieldtype": "Currency",
+   "label": "Guild hallmarks"
+  },
+  {
+   "fieldname": "government_trade_union_stamps",
+   "fieldtype": "Currency",
+   "label": "Government trade union stamps"
+  },
+  {
+   "fieldname": "miscellaneous",
+   "fieldtype": "Currency",
+   "label": "Miscellaneous"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "it_is_spent_on_behalf_of",
+   "fieldtype": "Data",
+   "label": "It is spent on behalf of"
+  },
+  {
+   "fieldname": "cheque_number",
+   "fieldtype": "Data",
+   "label": "Cheque Number"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_vuw8s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_apizv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "death_benefit",
+   "fieldtype": "Data",
+   "label": "Death benefit"
+  },
+  {
+   "fieldname": "the_members_indebtedness_from_qard_al_hasan2",
+   "fieldtype": "Currency",
+   "label": "The members indebtedness from Qard Al Hasan"
+  },
+  {
+   "fieldname": "unpaid_subscriptions2",
+   "fieldtype": "Currency",
+   "label": "Unpaid subscriptions"
+  },
+  {
+   "fieldname": "unpaid_registration_fee2",
+   "fieldtype": "Currency",
+   "label": "Unpaid registration fee"
+  },
+  {
+   "fieldname": "what_was_previously_spent_by_the_subsidiary_union2",
+   "fieldtype": "Currency",
+   "label": "\u0645\u0627 \u0633\u0628\u0642 \u0635\u0631\u0641\u0647 \u0645\u0646 \u0627\u0644\u0646\u0642\u0627\u0628\u0629 \u0627\u0644\u0641\u0631\u0639\u064a\u0629 \u0648\u064a\u0633\u062a\u0639\u0627\u0636 \u0644\u062d\u0633\u0627\u0628\u0647\u0627"
+  },
+  {
+   "fieldname": "guild_hallmarks2",
+   "fieldtype": "Currency",
+   "label": "Guild hallmarks"
+  },
+  {
+   "fieldname": "government_trade_union_stamps2",
+   "fieldtype": "Currency",
+   "label": "Government trade union stamps"
+  },
+  {
+   "fieldname": "miscellaneous2",
+   "fieldtype": "Currency",
+   "label": "Miscellaneous"
+  },
+  {
+   "fieldname": "grand_total2",
+   "fieldtype": "Float",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "it_is_spent_on_behalf_of2",
+   "fieldtype": "Data",
+   "label": "It is spent on behalf of"
+  },
+  {
+   "fieldname": "cheque_number2",
+   "fieldtype": "Data",
+   "label": "Cheque Number"
+  },
+  {
+   "fieldname": "date2",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "subscriptions_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0627\u0634\u062a\u0631\u0627\u0643\u0627\u062a"
+  },
+  {
+   "fieldname": "customer_subscriptions",
+   "fieldtype": "Table",
+   "label": "\u0625\u0634\u062a\u0631\u0627\u0643\u0627\u062a \u0627\u0644\u0639\u0636\u0648",
+   "options": "Customer payments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-28 13:15:07.732514",
+ "modified_by": "Administrator",
+ "module": "Pension",
+ "name": "Request for payment of death benefits",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

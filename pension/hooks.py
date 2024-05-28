@@ -5,7 +5,7 @@ app_title = "Pension"
 app_publisher = "ds"
 app_description = "ds"
 app_email = "ds"
-app_license = "MIT"
+app_license = "ds"
 
 # Includes in <head>
 # ------------------
@@ -71,22 +71,6 @@ app_license = "MIT"
 
 # before_uninstall = "pension.uninstall.before_uninstall"
 # after_uninstall = "pension.uninstall.after_uninstall"
-
-# Integration Setup
-# ------------------
-# To set up dependencies/integrations with other apps
-# Name of the app being installed is passed as an argument
-
-# before_app_install = "pension.utils.before_app_install"
-# after_app_install = "pension.utils.after_app_install"
-
-# Integration Cleanup
-# -------------------
-# To clean up dependencies/integrations with other apps
-# Name of the app being uninstalled is passed as an argument
-
-# before_app_uninstall = "pension.utils.before_app_uninstall"
-# after_app_uninstall = "pension.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
@@ -170,20 +154,6 @@ app_license = "MIT"
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
 
-# Ignore links to specified DocTypes when deleting documents
-# -----------------------------------------------------------
-
-# ignore_links_on_delete = ["Communication", "ToDo"]
-
-# Request Events
-# ----------------
-# before_request = ["pension.utils.before_request"]
-# after_request = ["pension.utils.after_request"]
-
-# Job Events
-# ----------
-# before_job = ["pension.utils.before_job"]
-# after_job = ["pension.utils.after_job"]
 
 # User Data Protection
 # --------------------

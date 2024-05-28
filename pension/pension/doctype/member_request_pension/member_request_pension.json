@@ -1,0 +1,251 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PEN-.YYYY.-.####.",
+ "creation": "2023-12-22 15:49:46.317209",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_data_tab",
+  "memb",
+  "issue_start_date",
+  "issue_end_date",
+  "issue_no",
+  "date_of_birth",
+  "personal_identification_number",
+  "designation",
+  "entry_date",
+  "name_of_pensioner",
+  "date_out_of_service",
+  "reason",
+  "subscriptions_payment_status",
+  "customers_family_tab",
+  "wife_data_section",
+  "wife_data",
+  "male_children_section",
+  "male_children",
+  "female_children_section",
+  "female_children",
+  "customer_subscription_tab",
+  "member_registration_status_and_subscriptions_section",
+  "the_date_the_form_was_received_in_the_registration_department",
+  "eligibility_for_registration",
+  "subscriptions_section",
+  "statement_of_the_period_of_paid_subscriptions",
+  "the_value_of_the_registration_fees_paid",
+  "subscriptions_tab",
+  "customer_subscriptions"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_data_tab",
+   "fieldtype": "Tab Break",
+   "label": "Customer Data"
+  },
+  {
+   "fieldname": "memb",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Membership ID",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "memb.custom_pension_from_year",
+   "fieldname": "issue_start_date",
+   "fieldtype": "Date",
+   "label": "Issue Start Date"
+  },
+  {
+   "fetch_from": "memb.custom_pension_to_year",
+   "fieldname": "issue_end_date",
+   "fieldtype": "Date",
+   "label": "Issue End Date"
+  },
+  {
+   "fieldname": "issue_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Issue No"
+  },
+  {
+   "fetch_from": "memb.date_of_birth",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "memb.personal_identification_number",
+   "fieldname": "personal_identification_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Personal identification number"
+  },
+  {
+   "fetch_from": "memb.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "membership_id.entry_date",
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "label": "Entry Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "memb.customer_name",
+   "fieldname": "name_of_pensioner",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name of Pensioner"
+  },
+  {
+   "fieldname": "date_out_of_service",
+   "fieldtype": "Date",
+   "label": "Date out of service"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "label": "Reason",
+   "options": "\nDeath\nRetirement\nEarly Retirement"
+  },
+  {
+   "fieldname": "subscriptions_payment_status",
+   "fieldtype": "Select",
+   "label": "Subscriptions Payment Status",
+   "options": "\nPaid\nUnpaid"
+  },
+  {
+   "fieldname": "customers_family_tab",
+   "fieldtype": "Tab Break",
+   "label": "Customer's Family"
+  },
+  {
+   "fieldname": "wife_data_section",
+   "fieldtype": "Section Break",
+   "label": "Wife Data"
+  },
+  {
+   "fieldname": "wife_data",
+   "fieldtype": "Table",
+   "label": "Wife Data",
+   "options": "Wife Data"
+  },
+  {
+   "fieldname": "male_children_section",
+   "fieldtype": "Section Break",
+   "label": "Male Children"
+  },
+  {
+   "fieldname": "male_children",
+   "fieldtype": "Table",
+   "label": "Male Children",
+   "options": "Male Children"
+  },
+  {
+   "fieldname": "female_children_section",
+   "fieldtype": "Section Break",
+   "label": "Female Children"
+  },
+  {
+   "fieldname": "female_children",
+   "fieldtype": "Table",
+   "label": "Female Children",
+   "options": "Female Children"
+  },
+  {
+   "fieldname": "customer_subscription_tab",
+   "fieldtype": "Tab Break",
+   "label": "Customer Subscription"
+  },
+  {
+   "fieldname": "member_registration_status_and_subscriptions_section",
+   "fieldtype": "Section Break",
+   "label": "Member registration status and subscriptions"
+  },
+  {
+   "fieldname": "the_date_the_form_was_received_in_the_registration_department",
+   "fieldtype": "Date",
+   "label": "The date the form was received in the registration department"
+  },
+  {
+   "fieldname": "eligibility_for_registration",
+   "fieldtype": "Data",
+   "label": "Eligibility for registration"
+  },
+  {
+   "fieldname": "subscriptions_section",
+   "fieldtype": "Section Break",
+   "label": "Subscriptions"
+  },
+  {
+   "fieldname": "statement_of_the_period_of_paid_subscriptions",
+   "fieldtype": "Data",
+   "label": "Statement of the period of paid subscriptions"
+  },
+  {
+   "fieldname": "the_value_of_the_registration_fees_paid",
+   "fieldtype": "Data",
+   "label": "The value of the registration fees paid"
+  },
+  {
+   "fieldname": "subscriptions_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0627\u0634\u062a\u0631\u0627\u0643\u0627\u062a"
+  },
+  {
+   "fieldname": "customer_subscriptions",
+   "fieldtype": "Table",
+   "label": "\u0625\u0634\u062a\u0631\u0627\u0643\u0627\u062a \u0627\u0644\u0639\u0636\u0648",
+   "options": "Customer payments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-28 13:15:17.626643",
+ "modified_by": "Administrator",
+ "module": "Pension",
+ "name": "Member Request Pension",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Pension",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Syndicate",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
