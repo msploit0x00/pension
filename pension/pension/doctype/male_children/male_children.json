@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-06-04 11:23:09.114949",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_child",
+  "date_of_birth",
+  "choices",
+  "name_of_choice",
+  "academic_year"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_child",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Child"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "choices",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Choices",
+   "options": "\nSchool\nFaculty"
+  },
+  {
+   "fieldname": "name_of_choice",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Choice"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Academic Year"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-04 11:23:09.114949",
+ "modified_by": "Administrator",
+ "module": "Pension",
+ "name": "Male Children",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
