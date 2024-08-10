@@ -142,7 +142,7 @@
    "fieldname": "subvention_status",
    "fieldtype": "Select",
    "label": "Subvention Status",
-   "options": "\nBrother\nSister\nFather\nMother\nDaughter\nSon"
+   "options": "\nBrother\nSister\nFather\nMother\nDaughter\nSon\nWife"
   },
   {
    "fieldname": "address_of_applicant",
@@ -163,7 +163,7 @@
    "fieldname": "payment_method",
    "fieldtype": "Select",
    "label": "Payment Method",
-   "options": "\nCash\nInstallment"
+   "options": "\nCash\nBank"
   },
   {
    "fieldname": "name_of_person_paid_for_funeral",
@@ -368,7 +368,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-23 23:02:31.729567",
+ "modified": "2024-08-10 10:43:53.329737",
  "modified_by": "Administrator",
  "module": "Pension",
  "name": "Request for payment of death benefits",

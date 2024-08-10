@@ -350,18 +350,18 @@
   {
    "fieldname": "customer_subscriptions_section",
    "fieldtype": "Section Break",
-   "label": "\u0627\u0644\u0627\u0634\u062a\u0631\u0627\u0643\u0627\u062a"
+   "label": "\u0627\u0644\u0645\u062a\u062c\u0645\u062f\u0627\u062a"
   },
   {
    "fieldname": "customer_subscriptions",
    "fieldtype": "Table",
-   "label": "\u0625\u0634\u062a\u0631\u0627\u0643\u0627\u062a \u0627\u0644\u0639\u0636\u0648",
-   "options": "Customer payments"
+   "label": "\u0627\u0644\u0645\u062a\u062c\u0645\u062f\u0627\u062a",
+   "options": "Member Heirs Request Pension Payment Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-23 23:03:12.554247",
+ "modified": "2024-08-10 10:11:28.687776",
  "modified_by": "Administrator",
  "module": "Pension",
  "name": "Member heirs request a pension",
